@@ -8,20 +8,37 @@
 </head>
 <body>
 
-    <h2>Formulário de Reunião</h2>
+    <header>
+        <h1>Formulário de Reunião</h1>
+    </header>
     
     <form id="reuniaoForm">
+        <label for="data">Data:</label>
+        <input type="date" id="data" name="data" required>
+
+        <label for="dirigida-por">Dirigida por:</label>
+        <input type="text" id="dirigida-por" name="dirigida-por" placeholder="Digite o nome da pessoa responsável" required>
+
+        <label for="anuncios">Anúncios:</label>
+        <textarea id="anuncios" name="anuncios" rows="4" placeholder="Digite os anúncios importantes" required></textarea>
+
         <label for="primeiro-hino">1º Hino:</label>
         <input type="text" id="primeiro-hino" name="primeiro-hino" placeholder="Digite o título do 1º hino" required>
 
         <label for="primeira-oracao">1º Oração:</label>
         <input type="text" id="primeira-oracao" name="primeira-oracao" placeholder="Digite o nome da pessoa responsável pela oração" required>
 
-        <label for="anuncios">Anúncios:</label>
-        <textarea id="anuncios" name="anuncios" rows="4" placeholder="Digite os anúncios importantes" required></textarea>
+        <label for="discursante1">Discursante 1:</label>
+        <input type="text" id="discursante1" name="discursante1" placeholder="Nome do 1º discursante" required>
 
-        <label for="discursantes">Discursantes:</label>
-        <textarea id="discursantes" name="discursantes" rows="4" placeholder="Digite os nomes dos discursantes" required></textarea>
+        <label for="discursante2">Discursante 2:</label>
+        <input type="text" id="discursante2" name="discursante2" placeholder="Nome do 2º discursante" required>
+
+        <label for="segundo-hino">2º Hino:</label>
+        <input type="text" id="segundo-hino" name="segundo-hino" placeholder="Digite o título do 2º hino" required>
+
+        <label for="discursante3">Discursante 3:</label>
+        <input type="text" id="discursante3" name="discursante3" placeholder="Nome do 3º discursante" required>
 
         <label for="ultimo-hino">Último Hino:</label>
         <input type="text" id="ultimo-hino" name="ultimo-hino" placeholder="Digite o título do último hino" required>
