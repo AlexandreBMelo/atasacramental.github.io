@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Reunião</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Formulário de Reunião</h2>
+    
+    <form id="reuniaoForm">
+        <label for="primeiro-hino">1º Hino:</label>
+        <input type="text" id="primeiro-hino" name="primeiro-hino" placeholder="Digite o título do 1º hino" required>
+
+        <label for="primeira-oracao">1º Oração:</label>
+        <input type="text" id="primeira-oracao" name="primeira-oracao" placeholder="Digite o nome da pessoa responsável pela oração" required>
+
+        <label for="anuncios">Anúncios:</label>
+        <textarea id="anuncios" name="anuncios" rows="4" placeholder="Digite os anúncios importantes" required></textarea>
+
+        <label for="discursantes">Discursantes:</label>
+        <textarea id="discursantes" name="discursantes" rows="4" placeholder="Digite os nomes dos discursantes" required></textarea>
+
+        <label for="ultimo-hino">Último Hino:</label>
+        <input type="text" id="ultimo-hino" name="ultimo-hino" placeholder="Digite o título do último hino" required>
+
+        <label for="ultima-oracao">Última Oração:</label>
+        <input type="text" id="ultima-oracao" name="ultima-oracao" placeholder="Digite o nome da pessoa responsável pela última oração" required>
+
+        <button type="button" onclick="gerarTXT()">Enviar</button>
+    </form>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
